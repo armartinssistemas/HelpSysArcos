@@ -1,20 +1,59 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
 <head>
-	<title>Usuarios</title>
+
+	<title>Sys Arcos - Usuarios</title>
+	<link rel="stylesheet" href="../estilo.css">
+	<style>
+        .nav>a {
+            margin-right: 35px;
+        }
+         .nav>.nav-log {
+            width: 300px;
+            display: flex;
+            flex-flow: column wrap;
+        }
+        .temp-title{
+        	font-size: 50px;
+        	font-style: bold;
+        	margin-top: 0;
+
+        }
+        .temp-video{
+        	vertical-align: top;
+
+        }
+        .temp-text{
+        	
+        	
+        }
+    </style>
 </head>
 <body>
-	<fieldset>
-	<img src="imagens/logo.jpeg" width="150px" alt="Logo"/>
-	<hr>
-	<a href="http://sistemaarcos.com.br/Default.aspx" alt="Oi">Home</a>
-	<a href="https://www.youtube.com/channel/UChSiQWYfrnTGJqdwWZ_QLmg/videos" target="_blank">Youtube</a>
-	</fieldset>
-	<fieldset>
-		<video width="400px" controls>
-			<source src="videos/tutorial_usuarios.mp4">
-		</video>
-		<h1>Usuarios</h1>
-	</fieldset>
+	<div class="container">
+		<div class="nav">
+			<div class="nav-log">
+				<img class="logo" src="imagens/ArcosSys.png"
+				 	alt="Arcos Logo">
+			</div>
+				<a href="index.html">HOME</a>
+				<a href="https://www.youtube.com/channel/UChSiQWYfrnTGJqdwWZ_QLmg/videos"
+					target="_blank">YouTube</a>
+		</div>
+	</div>
+	<div>
+		<div style="display: inline-block;" class="temp-video">
+			<video width="275px" controls="">
+				<source src="videos/tutorial_usuarios.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div style="display: inline-block;"> <!-- Nem sei oq fiz aqui kk mas foi -->
+			<h1 class="temp-title">Usuarios</h1>
+			<h3 class="temp-text">Resumo da aba e configurações de Usuarios</h3>
+		</div>
+			
+	</div>
 	
 
 
