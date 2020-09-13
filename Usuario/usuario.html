@@ -17,17 +17,26 @@
         .temp-title{
         	font-size: 50px;
         	font-style: bold;
-        	margin-top: 0;
+        	position: absolute;
+        	top: 40px;        	
+
 
         }
         .temp-video{
-        	vertical-align: top;
-
-        }
+        	position: relative;
+        	padding-top: 40px;
+        	padding-right:10px;
+        	padding-left: 10px;
+	    }
         .temp-text{
-        	
-        	
+        	vertical-align: top;
+        	position: relative;
+        	top: -80px;
+ 
         }
+        	
+        	
+
     </style>
 </head>
 <body>
@@ -44,14 +53,14 @@
 		</div>
 	</div>
 	<div>
-		<div class="" style="display: inline-block;" class="temp-video">
-			<video width="275px" controls="">
+		<div style="display: inline-block;">
+			<video class="temp-video" width="275px" controls="">
 				<source src="videos/tutorial_usuarios.mp4" type="video/mp4"
 
 				>
 			</video>
 		</div>
-		<div style="display: inline-block;"> <!-- Nem sei oq fiz aqui kk mas foi -->
+		<div style="display: inline-block;"> 
 			<h1 class="temp-title">Usuarios</h1>
 			<h3 class="temp-text">Resumo da aba e configurações de Usuarios</h3>
 		</div>
