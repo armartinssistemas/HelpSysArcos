@@ -14,37 +14,105 @@
             margin-right: 35px;
         }
 
-        .nav>.nav-log {
-            width: 300px;
-            display: flex;
-            flex-flow: column wrap;
+        .pages ul {
+            list-style: none
+        }
+
+        .pages__list li:before {
+            content: "•";
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em
+        }
+
+        .pages__list li:before:nth-child(1) {
+            color: var(--arcos-green);
+        }
+
+        .pages__list li:before:nth-child(2) {
+            color: var(--arcos-orange);
+        }
+
+        .pages__list li:before:nth-child(3) {
+            color: var(--arcos-blue);
+        }
+
+        .pages__list li:before:nth-child(4) {
+            color: var(--arcos-red);
+        }
+
+        .pages__list li:before:nth-child(5) {
+            color: var(--arcos-yellow);
+        }
+
+        .pages__list li:before:nth-child(6) {
+            color: var(--arcos-green);
+        }
+
+        .pages__list li:before:nth-child(7) {
+            color: var(--arcos-orange);
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="nav">
-            <div class="nav-log">
-                <img class="logo"
-                    src="assets/ArcosSys.png"
-                    alt="Arcos">
+    <div class="nav navbar">
+        <a class="nav-logo"
+            href="http://www.sistemaarcos.com.br/"
+            target="_blank">
+            <img src="assets/ArcosSys.png"
+                width="30"
+                height="30"
+                class="logo"
+                alt="Arcos">
+        </a>
+        <div class="navbar-wrap">
+            <div class="navbar-nav">
+                <a class="nav-item "
+                    href="index.html">HOME</a>
+                <a class="nav-item "
+                    href="https://youtube.com"
+                    target="_blank">YouTube</a>
             </div>
-            <a href="index.html">HOME</a>
-            <a href="https://youtube.com"
-                target="_blank">YouTube</a>
         </div>
     </div>
 
     <div class="container">
         <div class="header-container">
-            <div class="header-container__img">
+            <div class="header-container--img">
                 <img src=""
                     alt="logo">
             </div>
-            <div class="header-container__text">
+            <div class="header-container--text">
                 <h1>Documentação Sys Arcos</h1>
                 <h4>Explicação sobre o Sys</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="pages">
+                <ul class="pages__list">
+                    <li><a href="./index.html"
+                            target="_blank"
+                            rel="noopener noreferrer">Usuários...</a></li>
+                    <li> <a href="https://eventos.com"
+                            target="_blank"
+                            rel="noopener noreferrer">Eventos...</a></li>
+                    <li><a href="./index.html"
+                            target="_blank"
+                            rel="noopener noreferrer">Fornecedores</a></li>
+                    <li><a href="./index.html"
+                            target="_blank"
+                            rel="noopener noreferrer">Estoque</a></li>
+                    <li><a href="./index.html"
+                            target="_blank"
+                            rel="noopener noreferrer">Doação</a></li>
+                    <li><a href="./index.html"
+                            target="_blank"
+                            rel="noopener noreferrer">Assistência</a></li>
+                    <li><a href="./index.html"
+                            target="_blank"
+                            rel="noopener noreferrer">Voluntários</a></li>
+                </ul>
             </div>
         </div>
     </div>
