@@ -50,8 +50,16 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+html {
+    font: var(--font-family-sans-serif);
+    min-width: 576px;
+}
 body {
     margin: 0px;
+}
+
+p {
+    margin: 0;
 }
 
 .container,
@@ -140,6 +148,21 @@ body {
     margin-right: 5px;
 }
 
+.nav > a {
+    margin-right: 35px;
+}
+
+.pages ul {
+    list-style: none;
+}
+
+.pages-list li:before {
+    content: "•";
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
 a {
     text-decoration: none;
 }
@@ -168,6 +191,103 @@ a:link {
     flex: 1 0 100%;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.header {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem 1.5rem 1.5rem 0.5rem;
+}
+
+.header > .header-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.header > .header-container > .header-brand,
+.header-description {
+    flex-basis: auto;
+}
+
+.header > .header-container > .header-brand {
+    padding: 1.5rem;
+    background-color: var(--gray-400);
+    margin-right: 5px;
+}
+
+.header > .header-container > .header-description {
+    margin-left: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.info {
+    font-size: 1.5rem;
+    color: var(--grey);
+    margin-left: 15px;
+}
+
+.card-video {
+    background-color: var(--gray-200);
+    width: 540px;
+}
+
+@media screen and (max-width: 576px) {
+    .card-video {
+        width: 320px;
+    }
+    .header > .header-container {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 768px) {
+    .card-video {
+        width: 420px;
+    }
+    .header > .header-container {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 992px) {
+    .card-video {
+        width: 540px;
+    }
+
+    .header > .header-container {
+        flex-direction: column;
+    }
+
+    .header > .header-container > .header-brand {
+        margin: auto;
+    }
+
+    .header > .header-container > .header-description {
+        margin-top: 2rem;
+    }
+}
+
+.card {
+    background-color: var(--gray-200);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.tutorial,
+.module {
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+}
+
+.tutorial > .tutorial-container,
+.module > .module-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-tutorial {
+    margin-left: 15px;
 }
