@@ -1,31 +1,104 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
 <head>
-    <title>Tutorial sobre assistencia</title><!-- Titulo da página !-->
-
-    <link rel="stylesheet" href="estilo.css"> <!-- codigo para implementar o estilo css !-->
-
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Sys Arcos - Ajuda - Guia de Referência sobre Assistencia </title>
+    <link rel="stylesheet"
+        href="../estilo.css">
 </head>
+
 <body>
-    <li><a href="index.html">Home</a></li> <!-- Link do home !-->
-    <li><a href="https://www.youtube.com/channel/UChSiQWYfrnTGJqdwWZ_QLmg">Youtube</a></li><!-- Link do tutorial Youtube !-->
-
-    <h1>Entidade</h1><!-- Entidade !-->
-
-    <h1>Tutorial</h1><!-- Parte sobre o tutorial !-->
-    <p>1° Entrar no sistema ARCOS com seu login e senha; </p>
-    <p>2° Ir com a seta do mouse ate a aba assistencia;</p>
-    <p>3° Clicar 2 vezes com o mouse sobre o campo assistido;</p>
-    <p>4° Preencher os campos com os seus respectivos dados;</p>
-    <p>5° Se todos os dados forem preenchidos, clique 2 vezes no botão salvar;</p>
-    <p>6° Para ter certeza que os dados foram salvos; </p><!-- Alterar !-->
-    <p>7° Ir com a seta do mouse novamente para a aba assitencia;</p>
-    <p>8° Clicar 2 vezes com o mouse sobre o campo assitencia;</p>
-    <p>9° Preencher os campos com os seus respectivos dados;</p>
-    <p>10° Se todos os dados forem preenchidos, clique 2 vezes no botão salvar;</p>
-    <p>11° Para ter certeza que os dados foram salvos; </p><!-- Alterar !-->
-
-    <h1>Modulos de Relacionamentos</h1><!-- Modulo de relacionamentos !-->
-
-
+    <!-- Barra superior -->
+    <div class="nav navbar">
+        <a class="nav-logo"
+            href="http://www.sistemaarcos.com.br/"
+            target="_blank">
+            <img src="../assets/ArcosSys.png"
+                width="30"
+                height="30"
+                class="logo"
+                alt="Arcos">
+        </a>
+        <div class="navbar-wrap">
+            <div class="navbar-nav">
+                <a class="nav-item "
+                    href="../index.html">HOME</a>
+                <a class="nav-item "
+                    href="https://www.youtube.com/channel/UChSiQWYfrnTGJqdwWZ_QLmg"
+                    target="_blank">YouTube</a> <!-- Link do tutorial Youtube !-->
+            </div>
+        </div>
+    </div>
+    <!-- Cabeçalho -->
+    <div class="row header">
+        <div class="header-container">
+            <!-- class p/ video ou foto -->
+            <div class="header-brand">
+                <!-- tag de video -->
+                <video class="card-video"
+                    controls>
+                    <source src="../assets/tutorial_usuarios.mp4"
+                        type="video/mp4">
+                    <source src="movie.ogg"
+                        type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="header-description">
+                <!-- class title usar para todos TITULOS do projeto -->
+                <p class="title">Entidade</p>
+                <!-- class info usar para todos INFORMAÇÕES/DETALHES do projeto -->
+                <p class="info">Explicar detalhadamente qual é o objetivo do módulo, qual será a vinculação com os
+                    outros módulos, se possível inserir Links para as outras páginas.</p>
+                <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse quod minus in, amet dolor
+                    et id perspiciatis dolore animi eum doloribus illum impedit fugiat provident. Voluptas expedita quae
+                    necessitatibus? A.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Tutorial -->
+    <div class="row card tutorial">
+        <div class="tutorial-container">
+            <p class="title">Tutorial</p><!-- Parte sobre o tutorial !-->
+            <p class="info">1° Entrar no sistema ARCOS com seu login e senha; </p>
+            <p class="info">2° Ir com a seta do mouse ate a aba assistencia;</p>
+            <p class="info">3° Clicar 2 vezes com o mouse sobre o campo assistido;</p>
+            <p class="info">4° Preencher os campos com os seus respectivos dados;</p>
+            <p class="info">5° Se todos os dados forem preenchidos, clique 2 vezes no botão salvar;</p>
+            <p class="info">6° Para ter certeza que os dados foram salvos; </p><!-- Alterar !-->
+            <p class="info">7° Ir com a seta do mouse novamente para a aba assitencia;</p>
+            <p class="info">8° Clicar 2 vezes com o mouse sobre o campo assitencia;</p>
+            <p class="info">9° Preencher os campos com os seus respectivos dados;</p>
+            <p class="info">10° Se todos os dados forem preenchidos, clique 2 vezes no botão salvar;</p>
+            <p class="info">11° Para ter certeza que os dados foram salvos; </p><!-- Alterar !-->
+               
+            </a>
+         <!--   <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis sed perspiciatis
+                itaque nostrum quae, esse dolorum, commodi quos voluptas maiores, nam saepe? Esse sint soluta architecto
+                numquam nisi aut?</p> !-->
+            </a>
+        </div>
+    </div>
+    <!-- Modulo -->
+    <div class="row card module">
+        <div class="module-container">
+            <p class="title">Módulos Relacionados</p>
+            <div class="pages">
+                <!-- Lista com modulos -->
+                <ul class="pages-list">
+                    <li><a href="../Entidade/entidade.html"
+                            rel="noopener noreferrer">Entidade</a></li>
+                  <!--   <li><a href="./Assistencia/assistencia.html"
+                            rel="noopener noreferrer">Assistência</a></li>
+                    <li><a href="./Voluntario/voluntario.html"
+                            rel="noopener noreferrer">Voluntários</a></li>!-->
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
