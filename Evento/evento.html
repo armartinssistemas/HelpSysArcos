@@ -1,42 +1,102 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
 <head>
-	<title>SysARCOS-Eventos</title>
-
-	<link rel="stylesheet" type="text/css" href="estilo.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Sys Arcos - Ajuda - Eventos </title>
+    <link rel="stylesheet"
+        href="estilo.css">
 </head>
+
 <body>
-	<h1>Eventos</h1>
-
-	<hr>
-
-	<h2>Descrição de Evento</h2>
-	<p>O evento é uma ação realizada pelas ONGs que tem como finalidade arrecadar fundos e/ou alimentos através de festas, leilões, apresentações(ex:musicais,dança). Além de promover o trabalho que está sendo realizado pela ONG para com seus membros.</p>
-
-	<hr>
-
-	<h2>Cadastro de Evento</h2>
-	<p>Descrição passo a passo do cadastro de eventos.</p>
-
-	<h3>Tipo de Evento</h3>
-	<p>A primeira coisa a se fazer é cadastrar os tipos de eventos possíveis.</p>
-
-	<h5>Tipo de Evento</h5>
-	<p>Especificar qual o tipo de evento(ex:leilão, jantar, musical,etc).</p>
-
-	<h5>Descrição</h5>
-	<p>Dar uma breve descrição sobre esse tipo de evento.</p>
-
-	<h5>Botão Salvar</h5>
-	<p>Salva o tipo de evento descrito.</p>
-
-	<h5>Botão Novo</h5>
-	<p>Limpa os campos para realizar um novo cadastro de tipo de evento.</p>
-
-	<h5>Botão Buscar</h5>
-	<p>Busca por um tipo de evento ja cadastrado.</p>
-
-	<hr>
-
+    <!-- Barra superior -->
+    <div class="nav navbar">
+        <a class="nav-logo"
+            href="http://www.sistemaarcos.com.br/"
+            target="_blank">
+            <img src="assets/ArcosSys.png"
+                width="30"
+                height="30"
+                class="logo"
+                alt="Arcos">
+        </a>
+        <div class="navbar-wrap">
+            <div class="navbar-nav">
+                <a class="nav-item "
+                    href="index.html">HOME</a>
+                <a class="nav-item "
+                    href="https://youtube.com"
+                    target="_blank">YouTube</a>
+            </div>
+        </div>
+    </div>
+    <!-- Cabeçalho -->
+    <div class="row header">
+        <div class="header-container">
+            <!-- class p/ video ou foto -->
+            <div class="header-brand">
+                <!-- tag de video -->
+                <video class="card-video"
+                    controls>
+                    <source src="/assets/tutorial_usuarios.mp4"
+                        type="video/mp4">
+                    <source src="movie.ogg"
+                        type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="header-description">
+                <!-- class title usar para todos TITULOS do projeto -->
+                <p class="title">Evento</p>
+                <!-- class info usar para todos INFORMAÇÕES/DETALHES do projeto -->
+                <p class="info">No sistema da ARCOS, a aba de Eventos é usada para o cadastro dos possíveis eventos que as entidades poderão realizar. E é vinculada com a aba de Entidades, já que para realizar o cadastro dos eventos
+                    é necessário selecionar a Entidade responsável pelo mesmo.</p>
+                <p class="info">Nas telas de Evento, é possível cadastrar um novo evento, um novo tipo de eventos, buscar os eventos já cadastrados e os tipos de eventos existentes.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Tutorial -->
+    <div class="row card tutorial">
+        <div class="tutorial-container">
+            <p class="title">Tutorial</p>
+            <p class="info">1- Nessa primeira tela, é onde faz o cadastro dos eventos. Onde é necessário informar o nome, a descrição, a data e hora de início e fim do evento, selecionar o tipo de vento que será realizado e
+                a Entidade responsável pelo evento. Após preencher os campos, clique no botão "Salvar"</p>
+             <a href="assets/reference-teste.png"
+                target="_blank">
+                <img class="img-tutorial"
+                    src="img-eventos.png"
+                    width="100"
+                    height="75"
+                    alt="referencia">
+            </a>
+            <p class="info">2- Caso o tipo de evento à ser realizado não apareça, é necessário cadastra-lo. Para fazer isto, clique em eventos e selecione "Tipo Evento", como mostra na imagem.</p>
+            <p class="info">Após clicar em tipo eventos, irá abrir outra tela, que é responsável pelo cadastro dos tipos. Para efetuar o cadastro, é necessário informar o tipo (ex: um jantar), e uma descrição para esse evento.
+            Logo em seguida, clicar no botão "Salvar".</p>
+            <a href="assets/reference-teste.png"
+                target="_blank">
+                <img class="img-tutorial"
+                    src="img-tipoeventos.png"
+                    width="100"
+                    height="75"
+                    alt="referencia">
+            </a>
+        </div>
+    </div>
+    <!-- Modulo -->
+    <div class="row card module">
+        <div class="module-container">
+            <p class="title">Módulos Relacionados</p>
+            <div class="pages">
+                <!-- Lista com modulos -->
+                <ul class="pages-list">
+                    <li><a href="./Entidade/entidade.html"
+                            rel="noopener noreferrer">Entidade</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
