@@ -2,123 +2,175 @@
 <html lang="pt-BR">
 
 <head>
-	<section>
-	<title>Sys Arcos - Usuarios</title>
-	<link rel="stylesheet" href="../estilo.css">
-	<style>
-        .nav>a {
-            margin-right: 35px;
-            font-size: 18px; 
-        	font-style:Arial; 
-        	color: #000000;
-        }
-         .nav>.nav-log {
-            width: 270px;
-            display: flex;
-            flex-flow: column wrap;
-            padding: 5px;
-            padding-left: 30px;
-
-        }
-        .temp-title{
-        	position: relative;
-        	font-size: 40px;
-        	font-family:Times,sans-serif;
-        	margin-top: 0px; 
-        	margin-bottom: 0px;
-        	top: -90px; 
-        	padding-left: 5px;
-=======
-        	font-size: 50px;
-        	font-style: bold;
-        	position: absolute;
-        	top: 40px;        	
->>>>>>> c1cafce05dd75d08df5b227f73240951eee3faef
-
-
-        }
-        .temp-video{
-        	position: relative;
-        	padding-top: 40px;
-        	padding-right:10px;
-        	padding-left: 10px;
-	    }
-        .temp-text{
-        	vertical-align: top;
-        	position: relative;
-        	top: -80px;
- 
-        }
-<<<<<<< HEAD
-        .temp-text{
-        	position:relative;
-  			margin-top: 0px;
-  			margin-bottom: 0px;
-        	top: -80px; 
-        	padding-left: 5px;
-
-=======
-        	
->>>>>>> c1cafce05dd75d08df5b227f73240951eee3faef
-        	
-
-    </style>
-    </section>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Sys Arcos - Ajuda - Guia de Referência </title>
+    <link rel="stylesheet"
+        href="..\estilo.css">
 </head>
+
 <body>
-	<div class="container">
-		<div class="nav">
-			<div class="nav-log">
-				<img class="logo" src="../assets/ArcosSys.png"
-				 	alt="Arcos Logo">
-			</div>
-				<a href="../index.html">Voltar</a>
-				<a href="index.html">Home</a>
-				<a href="https://www.youtube.com/channel/UChSiQWYfrnTGJqdwWZ_QLmg/videos"
-					target="_blank">YouTube</a>
-		</div>
-	</div>
-<<<<<<< HEAD
-	</section>
-	
-	<section  style="padding-top: 20px; padding-left: 15px; ">
-
-		<div class="" style="display: inline-block;" class="temp-video">
-			<video width="275px" controls="">
-				<source src="videos/tutorial_usuarios.mp4" type="video/mp4"
-=======
-	<div>
-		<div style="display: inline-block;">
-			<video class="temp-video" width="275px" controls="">
-				<source src="../assets/tutorial_usuarios.mp4" type="video/mp4"
->>>>>>> c1cafce05dd75d08df5b227f73240951eee3faef
-
-				>
-			</video>
-		</div>
-<<<<<<< HEAD
-		<div style="display: inline-block;"> <!-- Nem sei oq fiz aqui kk mas foi -->
-			<h1 class="temp-title"><strong>Usuarios</strong></h1>
-			<p class="temp-text" >Resumo da aba e configurações de Usuarios</p>
-=======
-		<div style="display: inline-block;"> 
-			<h1 class="temp-title">Usuarios</h1>
-			<h3 class="temp-text">Resumo da aba e configurações de Usuarios</h3>
->>>>>>> c1cafce05dd75d08df5b227f73240951eee3faef
-		</div>
-			
-	</section>
-	<section style="padding: 30px 0 20px 20px" >
-		<h2 style="font-size:30px;">Tutorial</h2>
-		<p>Tutorial passo a passo explicando como funciona cada uma das telas</p> 
-
-	</section>
-	<section style="padding: 10px 0 20px 20px; ">
-		<h2 style="font-size:30px;">Módulos Relacionados</h2>
-		<p> Mostrar de que maneira esse módulo interage com outros módulos</p>
-	</section>
-
-
-
+    <!-- Barra superior -->
+    <div class="nav navbar">
+        <a class="nav-logo"
+            href="http://www.sistemaarcos.com.br/"
+            target="_blank">
+            <img src="imagens\ArcosSys.png"
+                width="30"
+                height="30"
+                class="logo"
+                alt="Arcos">
+        </a>
+        <div class="navbar-wrap">
+            <div class="navbar-nav">
+                <a class="nav-item "
+                    href="index.html">HOME</a>
+                <a class="nav-item "
+                    href="https://www.youtube.com/watch?v=jkOlXHsXj1c&t=1s"
+                    target="_blank">YouTube</a>
+            </div>
+        </div>
+    </div>
+    <!-- Cabeçalho -->
+    <div class="row header">
+        <div class="header-container">
+            <!-- class p/ video ou foto -->
+            <div class="header-brand">
+                <!-- tag de video -->
+                <video class="card-video"
+                    controls>
+                    <source src="videos\tutorial.mp4"
+                        type="video/mp4">
+                    <source src="movie.ogg"
+                        type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="header-description">
+                <!-- class title usar para todos TITULOS do projeto -->
+                <p class="title">Entidade</p>
+                <!-- class info usar para todos INFORMAÇÕES/DETALHES do projeto -->
+                <p class="info">A página "Usuário" é onde é feito o cadastro dos usuários que terão acesso ao sistema. Esses usuários terão diferentes permissões dependendo da função exercida. Essas funções podem variar desde apenas a visualização das informações referentes a ong que ele está vinculado até o cadastramento de novos usuários, eventos, doações, entre outros.</p>
+                <!-- <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse quod minus in, amet dolor
+                    et id perspiciatis dolore animi eum doloribus illum impedit fugiat provident. Voluptas expedita quae
+                    necessitatibus? A.</p> -->
+            </div>
+        </div>
+    </div>
+    <!-- Tutorial -->
+    <div class="row card tutorial">
+        <div class="tutorial-container">
+            <p class="title">Como cadastrar um novo usuário?</p>
+            <p class="info">Para cadastrar um novo usuário você deve primero fazer o login no sistema arcos.</p>
+            <a href="imagens\login.jpeg"
+                target="_blank">
+                <img class="img-tutorial"
+                    src="imagens\login.jpeg"
+                    width="450"
+                    height="300"
+                    alt="login">
+            </a>
+            <p class="info">Ao efetuar o login você será direcionado para a página inicial do sistema onde terá acesso a vários menus como mostrado na imagem. Ao passar o mouse por cima de um menu ele já mostra os sub-menus.</p>
+            <a href="imagens\menu.jpeg"
+                target="_blank">
+                <img class="img-tutorial"
+                    src="imagens\menu.jpeg"
+                    width="450"
+                    height="300"
+                    alt="menu">
+            </a>
+            <p class="info">Neste caso vamos cadastrar um novo usuário, para isso você deve posicionar o mouse sobre o menu "Usuários" e depois clicar no submenu "Usuário", você será redirecionado para a página de cadastramento onde os campos que devem ser preenchidos para efetuar o cadastro.</p>
+            <a href="imagens\mouse_usuario.jpeg"
+                target="_blank">
+                <img class="img-tutorial"
+                    src="imagens\mouse_usuario.jpeg"
+                    width="450"
+                    height="300"
+                    alt="usuario">
+            </a>
+            <p class="info"><!--Texto precisa de ajustes-->
+            A página contém os campos: senha, número do cpf, e_mail e logo abaixo o botão de permissão (serve pra conceder diferentes níveis de permissão para cada usuário)  também o botão de alterar a senha no próximo login (que faz com que o usuário cadastrado faça a alteração da senha que foi usada para efetuar o cadastro).</p>
+            <a href="imagens\campos.jpeg"
+                target="_blank">
+                <img class="img-tutorial"
+                    src="imagens\campos.jpeg"
+                    width="450"
+                    height="300"
+                    alt="campos">
+            </a>
+            <p class="info">Após preencher os campos clique  no botão salvar, se tudo estiver correto o sistema irá salvar e mostrará a mensagem: "Usuário cadastrado com sucesso". </p>
+            <a href="imagens\salvo.jpeg"
+                target="_blank">
+                <img class="img-tutorial"
+                    src="imagens\salvo.jpeg"
+                    width="450"
+                    height="300"
+                    alt="salvar">
+            </a>
+            <p class="info">Ao clicar no botão ok você será redirecionado novamente para a tela de cadastro. </p>
+            <a href="imagens\campos.jpeg"
+                target="_blank">
+                <img class="img-tutorial"
+                    src="imagens\campos.jpeg"
+                    width="450"
+                    height="300"
+                    alt="campos">
+            </a>
+            <p class="info">Para buscar por um usuário já cadastrado basta clicar no botão "Buscar" colocar o nome da pessoa que você deseja encontrar.</p>
+            <a href="imagens\buscar.jpeg"
+                target="_blank">
+                <img class="img-tutorial"
+                    src="imagens\buscar.jpeg"
+                    width="450"
+                    height="300"
+                    alt="buscar">
+            </a>
+            <p class="info">Se precisar editar alguma informação, basta "Selecionar" o cadastro e alterar o campo desejado, depois é só "Salvar".</p>
+            <a href="imagens\buscando_pessoa.jpeg"
+                target="_blank">
+                <img class="img-tutorial"
+                    src="imagens\buscando_pessoa.jpeg"
+                    width="450"
+                    height="300"
+                    alt="buscando">
+            </a>
+            <p class="info">Para remover um cadastro, basta selecionar o cadastro e clicar no botão "Remover", irá aparece uma mensagem:"Deseja remover esse usuário?",se sim, basta clicar em "OK".</p>
+            <a href="imagens\remover.jpeg"
+                target="_blank">
+                <img class="img-tutorial"
+                    src="imagens\remover.jpeg"
+                    width="450"
+                    height="300"
+                    alt="remover">
+            </a>
+             <a href="imagens\removido.jpeg"
+                target="_blank">
+                <img class="img-tutorial"
+                    src="imagens\removido.jpeg"
+                    width="450"
+                    height="300"
+                    alt="removido">
+            </a>
+        </div>
+    </div>
+    <!-- Modulo -->
+    <div class="row card module">
+        <div class="module-container">
+            <p class="title">Módulos Relacionados</p>
+            <div class="pages">
+                <!-- Lista com modulos -->
+                <ul class="pages-list">
+                    <li><a href="./Doacoes/doacoes.html"
+                            rel="noopener noreferrer">Doação</a></li>
+                    <li><a href="./Assistencia/assistencia.html"
+                            rel="noopener noreferrer">Assistência</a></li>
+                    <li><a href="./Voluntario/voluntario.html"
+                            rel="noopener noreferrer">Voluntários</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
