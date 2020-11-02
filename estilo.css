@@ -237,8 +237,18 @@ a:link {
     width: 540px;
 }
 
+.card-logo {
+    width: 540px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.card-logo > img {
+    margin: auto;
+}
+
 @media screen and (max-width: 576px) {
-    .card-video {
+    .card-video,
+    .card-logo {
         width: 320px;
     }
     .header > .header-container {
@@ -246,7 +256,8 @@ a:link {
     }
 }
 @media screen and (max-width: 768px) {
-    .card-video {
+    .card-video,
+    .card-logo {
         width: 420px;
     }
     .header > .header-container {
@@ -254,7 +265,8 @@ a:link {
     }
 }
 @media screen and (max-width: 992px) {
-    .card-video {
+    .card-video,
+    .card-logo {
         width: 540px;
     }
 
